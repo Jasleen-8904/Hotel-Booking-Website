@@ -1,0 +1,140 @@
+/*---------------------------BOOKING CSS-----------------------*/
+.booking{
+    background: url(./img/6.jpg);
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+}
+
+.booking h1{
+    text-align: center;
+    position: relative;
+    top: 40%;
+    font-size: 100px;
+    color: white;
+    letter-spacing: 40px;
+}
+@media screen and (max-width: 500px) {
+    .booking h1{
+        font-size: 30px;
+        text-align: center;
+        position: relative;
+        letter-spacing: 15px;
+        top: 40%;
+    }
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.booking-btn {
+    display: flex;
+    margin-top: 40vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.booking-btn a {
+    position: relative;
+    background: rgba(5, 5, 5, 0);
+    backdrop-filter: blur(8px);
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #0f0;
+    margin: 54px;
+    text-transform: uppercase;
+    font-weight: 600px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.booking-btn a:hover {
+    transition-delay: 1.5s;
+    color: black;
+    box-shadow: 0 0 10px #0f0,
+    0 0 20px #0f0,
+    0 0 40px #0f0,
+    0 0 80px #0f0,
+    0 0 160px #0f0;
+}
+
+.booking-btn a span {
+    position: relative;
+    z-index: 100;
+}
+
+.booking-btn a:nth-child(2) {
+    filter: hue-rotate(80deg);
+}
+
+.booking-btn a::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #0f0;
+    box-shadow: 5px -8px 0 #0f0,
+                5px 8px 0 #0f0;
+    transition: width 0.5s, left 0.5s, height 0.5s,
+    box-shadow 0.5s;
+    transition-delay: 1s,0.5s,0s,0s;
+}
+
+.booking-btn a:hover::before {
+    width: 60%;
+    height: 102%;
+    left: -2px;
+    box-shadow: 5px 0 0 #0f0,
+                5px 0 0 #0f0;
+    transition-delay: 0s,0.5s,1s,1s;
+}
+
+.booking-btn a::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #0f0;
+    box-shadow: -5px -8px 0 #0f0,
+                -5px 8px 0 #0f0;
+    transition: width 0.5s, left 0.5s, height 0.5s,
+    box-shadow 0.5s;
+    transition-delay: 1s,0.5s,0s,0s;
+}
+
+.booking-btn a:hover::after {
+    width: 60%;
+    height: 102%;
+    right: -2px;
+    box-shadow: -5px 0 0 #0f0,
+                -5px 0 0 #0f0;
+    transition-delay: 0s,0.5s,1s,1s;
+}
+
+@media screen and (max-width: 500px) {
+    .booking-btn{
+        margin-top: 40vh;
+    }
+}

@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contact-us{
+    font-family: 'roboto';
+    height: 100%;
+}
+
+.hd{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: lime;
+}
+
+.details{
+    color: white;
+    text-transform: uppercase;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.address{
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+.email{
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+.phone{
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 600px) {
+    .details{
+        flex-direction: column;
+    }
+}
+
+.address h4{
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 35px;
+    font-weight: bold;
+    color: lime;
+}
+.address-main{
+    font-size: 25px;
+    font-weight: normal;
+}
+.email h4{
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 35px;
+    font-weight: bold;
+    color: lime;
+}
+.email h5{
+    text-transform: lowercase;
+}
+.email-main{
+    font-size: 25px;
+    font-weight: normal;
+}
+.phone h4{
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 35px;
+    font-weight: bold;
+    color: lime;
+}
+.phone-main{
+    font-size: 25px;
+    font-weight: normal;
+}
